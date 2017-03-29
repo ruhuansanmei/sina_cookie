@@ -1,7 +1,7 @@
 import curl = require('curl')
 let getCookie = () => {
   return new Promise((res, rej) => {
-    curl.get('http://localhost:6868?username=17310802427&password=qqqq1111', (err, resp, body) => {
+    curl.get('http://localhost:6868?username=xxxx&password=xxxx', (err, resp, body) => {
       if (err) {
         console.log(err)
         rej(err)
