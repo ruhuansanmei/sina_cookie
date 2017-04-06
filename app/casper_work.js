@@ -19,7 +19,7 @@ casper.start('https://login.sina.com.cn/signup/signin.php',function(response){
     //  this.echo(this.getTitle())
     //  this.echo(phantom.cookies)
     })
-casper.wait(10000,function() {
+casper.wait(20000,function() {
     this.evaluate(function (usr,psw) {
         // console.log(username)
         // console.log(password)
@@ -31,7 +31,7 @@ casper.wait(10000,function() {
     },username,password)
     
 })
-casper.wait(10000)
+casper.wait(30000)
 casper.thenOpen('http://s.weibo.com/user/&region=custom:11:1000&page=4',function(response) {
     // console.log(phantom.cookies)
     // console.log('response')
